@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #f3f3f3;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+.logo{
+    height: 50px;
+}
+
+nav{
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: #33b5e5;
+    height: 44px;
+    border-radius: 22px  0  0 22px;
+    
+}
+
+.list{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+
+.list >p{
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.round{
+    height: 20px;
+    width:20px; 
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.round > img{
+    margin: auto;
+    max-width: 12px;
+    max-height: 12px;
+}
+
+
+.main{
+    margin-left: 250px;
+    width: calc(100% -2 50px); 
+}
+
+.head{
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    background-color: white;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #b6b7b8;
+    font-weight: bold;
+
+}
+
+#form{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #b6b7b8;
+    padding-bottom: 10px;
+}
+
+.employee-input{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input{
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0.5px solid rgba(104, 104, 104,0.5);
+    padding: 5px;
+    background-color: rgb(230, 230, 230);
+}
+
+.form-input{
+    padding-left: 10px;
+    min-width: 30%;
+    margin: 20px;
+}
+
+label{ 
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.buttons{
+    padding-left: 28px;
+    padding-bottom: 30px;
+
+}
+
+
+.buttons > button{
+    width: 120px;
+    height: 25px;
+    border: 0.4px rgba(145, 56, 56, 0.767);
+    border-radius: 2px;
+    color: white;
+    background-color:rgba(150, 150, 150, 0.767);
+}
+
+#submit{
+    background-color: #33b5e5;
+}
+
+
+select{
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0.5px solid rgba(104, 104, 104,0.5);
+    padding: 5px;
+    background-color: rgb(230, 230, 230);
+}
