@@ -39,7 +39,7 @@
             Create Employee
         </Header>
     
-        <form action=""  id="form" onsubmit="formSubmit();return false;">
+        <form action=""  id="form" onsubmit="processChange();return false;">
             <div class="employee-input">
 
                     
@@ -101,15 +101,21 @@
     <script>
         
     let email = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+    function debounce(func, timeout = 3000){
+      let timer;
+      return (...args) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => { func.apply(this, args); }, timeout);
+      };
+    }
     
-    let formSubmit= ()=> {
-        form_email = document.getElementById('email').value;
-        if(email.test(form_email)== true){
+    const formSubmit= ()=> {
+        form_email = document.getElementById("email").value;
+        if(email.test(form_email)!= true){
             console.log('invalid email')
         }
-        // else{
-
-        // }
+        
 
         let d={}
         let f = document.getElementById('form')
@@ -121,6 +127,10 @@
 
         document.getElementById('submit').style.backgroundColor="black";
     }
+
+
+
+    const processChange = debounce(() => formSubmit());
 
     
          
