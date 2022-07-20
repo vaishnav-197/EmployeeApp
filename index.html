@@ -100,7 +100,7 @@
 
     <script>
         
-    let email = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    let email = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]+$/;
 
     function debounce(func, timeout = 3000){
       let timer;
@@ -113,7 +113,7 @@
     const formSubmit= ()=> {
         form_email = document.getElementById("email").value;
         if(email.test(form_email)!= true){
-            console.log('invalid email')
+            alert('invalid email')
         }
         
 
